@@ -14,7 +14,7 @@ const two = '2';
 let result = one * two;// This is type coercion, JavaScript will convert the string '2' to a number before multiplication
 console.log(result); 
 
-result = one * Number(two); // Converting the string '2' to a number before multiplication to avoid concatenation
+result = one + Number(two); // Converting the string '2' to a number before multiplication to avoid concatenation
 console.log(result); 
 
 
