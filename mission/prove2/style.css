@@ -55,8 +55,9 @@ img {
 }
 
 select {
-    display: block;
-    margin: 20px auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
     padding: 5px;
 }
 
