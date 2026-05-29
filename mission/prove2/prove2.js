@@ -11,7 +11,7 @@ function changeTheme() {
 
         document.body.classList.add('dark');
 
-        logo.src = "images/byui-logo-dark.png";
+        logo.src = "../images/byui-logo-dark.png";
 
     } else {
 
