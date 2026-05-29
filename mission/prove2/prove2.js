@@ -17,6 +17,6 @@ function changeTheme() {
 
         document.body.classList.remove('dark');
 
-        logo.src = "../images/byui-logo-blue.png";
+        logo.src = "../images/byui-logo-blue.webp";
     }
 }
