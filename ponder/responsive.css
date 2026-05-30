@@ -53,7 +53,7 @@ footer {
 }
 
 
-@media screen and (min-width: 650px) {
+@media screen and (max-width: 650px) {
     main{
         grid-template-columns: 1fr 1fr;
     }
@@ -68,7 +68,7 @@ footer {
     }
 }
         
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
