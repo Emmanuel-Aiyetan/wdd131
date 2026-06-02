@@ -96,7 +96,6 @@ figure img {
 nav a {
     display: block;
     color: white;
-    text-decoration: none;
     padding: 8px;
 }
 nav a:hover {
