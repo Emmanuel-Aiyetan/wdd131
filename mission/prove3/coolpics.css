@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: lightgray;
 }
 
@@ -19,7 +19,7 @@ h1 {
     background: none;
     border: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: .5rem;
     cursor: pointer;
 }
