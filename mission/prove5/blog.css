@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+header {
+    text-align: center;
+    border: 2px solid black;
+    margin: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border-top: 1px solid tan;
+    border-bottom: 1px solid tan;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkred;
+}
+
+main {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: 0 2rem;
+}
+
+.book-review {
+    padding: 2rem;
+}
+
+.book-info {
+    text-align: right;
+}
+
+.book-content {
+    text-align: center;
+}
+
+.book-content h2 {
+    color: darkred;
+}
+
+.book-content img {
+    max-width: 200px;
+}
+@media (min-width: 700px) {
+
+    .book-review {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 2rem;
+    }
+
+    .book-info {
+        border-right: 1px solid tan;
+        padding-right: 1rem;
+    }
+
+}
