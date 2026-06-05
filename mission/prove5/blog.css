@@ -5,8 +5,6 @@ body {
 
 header {
     text-align: center;
-    border: 2px solid black;
-    margin: 2rem;
 }
 
 nav {
@@ -26,7 +24,8 @@ nav a {
 main {
     border-left: 2px solid black;
     border-right: 2px solid black;
-    margin: 0 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
 }
 
 .book-review {
@@ -39,6 +38,7 @@ main {
 
 .book-content {
     text-align: center;
+    max-width: 650px;
 }
 
 .book-content h2 {
@@ -48,17 +48,25 @@ main {
 .book-content img {
     max-width: 200px;
 }
+footer {
+    text-align: center;
+    border-top: 1px solid #d8b98b;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 @media (min-width: 700px) {
 
     .book-review {
         display: grid;
-        grid-template-columns: 200px 1fr;
+        grid-template-columns: 250px 1fr;
         gap: 2rem;
     }
 
     .book-info {
         border-right: 1px solid tan;
         padding-right: 1rem;
+        width: 180px;
+        justify-self: end;
     }
-
 }
