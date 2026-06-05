@@ -22,8 +22,8 @@ nav a {
 }
 
 main {
-    width: 95%;
-    margin: 2rem auto;
+    width: 90%;
+    margin: 1rem auto;
     min-height: 75vh;
 }
 
@@ -58,7 +58,7 @@ footer {
 
     .book-review {
         display: grid;
-        grid-template-columns: 280px 1fr;
+        grid-template-columns: 300px 1fr;
         gap: 3rem;
         width: 100%;
     }
