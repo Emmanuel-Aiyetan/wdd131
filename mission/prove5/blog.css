@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Georgia, serif;
+    min-height: 100vh;
 }
 
 header {
@@ -22,10 +23,9 @@ nav a {
 }
 
 main {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    max-width: 1200px;
-    margin: 2rem auto;
+    max-width: 100%;
+    margin: 2rem ;
+    min-height: 70vh;
 }
 
 .book-review {
@@ -49,18 +49,19 @@ main {
     max-width: 200px;
 }
 footer {
-    text-align: center;
     border-top: 1px solid #d8b98b;
+    text-align: center;
     padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 2rem;
 }
+
 @media (min-width: 700px) {
 
     .book-review {
         display: grid;
         grid-template-columns: 250px 1fr;
-        gap: 2rem;
+        width: 100%;
+
     }
 
     .book-info {
