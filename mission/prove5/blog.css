@@ -66,7 +66,6 @@ footer {
     .book-info {
         border-right: 1px solid tan;
         padding-right: 1rem;
-        width: 180px;
-        justify-self: end;
+        text-align: right;
     }
 }
