@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Georgia, serif;
+    font-family: Arial, sans-serif;
 }
 
 header {
@@ -67,5 +67,13 @@ footer {
         border-right: 1px solid tan;
         padding-right: 1rem;
         text-align: right;
+    }
+
+    .book-content {
+        text-align: left;
+    }
+
+    .book-content img {
+        margin: 0;
     }
 }
