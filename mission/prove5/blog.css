@@ -74,6 +74,7 @@ footer {
     }
 
     .book-content img {
-        margin: 0;
+        display: block;
+        margin: 0 auto;
     }
 }
