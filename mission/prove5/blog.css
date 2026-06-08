@@ -9,10 +9,10 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    border-top: 1px solid tan;
-    border-bottom: 1px solid tan;
+    justify-content: flex-end;
+    gap: 3rem;
+    border-top: 2px solid rgb(221, 157, 74);
+    border-bottom: 2px solid rgb(221, 157, 74);
     padding: 1rem;
 }
 
@@ -41,14 +41,14 @@ main {
 }
 
 .book-content h2 {
-    color: darkred;
+    color: rgb(192, 24, 24);
 }
 
 .book-content img {
     max-width: 200px;
 }
 footer {
-    border-top: 1px solid #d8b98b;
+    border-top: 2px solid rgb(221, 157, 74);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -64,7 +64,7 @@ footer {
     }
 
     .book-info {
-        border-right: 1px solid tan;
+        border-right: 2px solid rgb(221, 157, 74);
         padding-right: 1rem;
         text-align: right;
     }
