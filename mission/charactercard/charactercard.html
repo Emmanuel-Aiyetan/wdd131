@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Character Card">
+    <meta name="author" content="Emmanuel Aiyetan">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="A fantasy character card built with JavaScript objects.">
+    <meta property="og:url" content="https://emmanuel-aiyetan.github.io/wdd131/mission/charactercard/charactercard.html">
+    <meta property="og:image" content="https://emmanuel-aiyetan.github.io/wdd131/mission/charactercard/images/snortleblat.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="A fantasy character card built with JavaScript objects.">
+    <meta name="twitter:image" content="https://emmanuel-aiyetan.github.io/wdd131/mission/charactercard/images/snortleblat.webp">
+    <title>Character Card</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.jpeg">
+    <link rel="stylesheet" href="charactercard.css">
+    <script src="charactercard.js" defer></script>
+</head>
+<body>
+
+<div class="card">
+    <img id="image" class="image">
+    <div class="name" id="name"></div>
+    <div class="stats">
+        <p><strong>Class:</strong> <span id="class"></span></p>
+        <p><strong>Level:</strong> <span id="level"></span></p>
+        <p><strong>Health:</strong> <span id="health"></span></p>
+    </div>
+
+    <div class="buttons">
+        <button id="attack">Attacked</button>
+        <button id="levelUp">Level Up</button>
+    </div>
+</div>
+</body>
+</html>
