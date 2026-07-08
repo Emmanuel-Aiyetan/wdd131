@@ -321,6 +321,7 @@ function recipeTemplate(recipe) {
             class="recipe-image"
             src="${recipe.image}"
             alt="${recipe.name}"
+            loading="lazy"
         >
 
         <section class="recipe-info">
