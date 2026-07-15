@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="styles/site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>2026 World Cup Player Cards Project Plan</h1>
+			<h2>Emmanuel Aiyetan</h2>
+			<h2>WDD 131</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>As a lifelong Manchester United fan and someone who's been completely invested in following the 2026 World Cup, I wanted to build something that combines my love for football with what I've learned this semester. This app lets users browse and search player cards from the top 10 FIFA-ranked national teams competing in the tournament, making it easy to look up call-up info and stats for their favorite players in a fun, interactive way.</p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>This application is designed for football fans who are following the 2026 FIFA World Cup and want a quick, interactive way to explore national team squads. Whether someone wants to look up a favorite player, compare players from different countries, or simply learn more about the tournament, this app provides an organized and enjoyable experience.</p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>JavaScript will provide all of the interactive features of the application. Player information will be stored as an array of objects, with each object containing details such as the player's name, country, position, club, age, appearances, goals, and an image. When the page loads, JavaScript will display player cards by looping through the array using forEach(). Users will be able to search for players by name, country, club, or position. The search results will be filtered using filter(), sorted alphabetically using sort(), and then displayed by updating the HTML with JavaScript. Event listeners will respond to button clicks and keyboard input, while conditional statements will display a message when no players match the search and can also highlight captains or other featured players.</p>
+			<!-- change this -->
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="images/logo.png" alt="Logo image" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a
+				href="https://coolors.co/006847-ffffff-c8102e-f4c430"
+				target="_blank"
+				>https://coolors.co/006847-ffffff-c8102e-f4c430</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">#006847</td>
+                    <td class="secondary">#FFFFFF</td>
+                        <td class="accent1">#C8102E</td>
+                        <td class="accent2">#F4C430</td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+
+			<h3>Pseudocode for your project</h3>
+
+            <p>
+                1. Create an array of player objects containing the player's name,
+                country, club, position, age, appearances, goals, captain status,
+                and image.
+
+                <br><br>
+
+                2. When the page loads, display all player cards.
+
+                <br><br>
+
+                3. Create a function that generates the HTML for one player card.
+
+                <br><br>
+
+                4. Create a function that loops through the array using forEach() and
+                displays every player card.
+
+                <br><br>
+
+                5. Listen for clicks on the Search button and the Enter key.
+
+                <br><br>
+
+                6. Get the user's search text.
+
+                <br><br>
+
+                7. Convert the search text to lowercase and remove extra spaces.
+
+                <br><br>
+
+                8. Filter the player array by checking the player's name, country,
+                club, or position.
+
+                <br><br>
+
+                9. Sort the filtered players alphabetically.
+
+                <br><br>
+
+                10. If no players are found, display a message saying "No players found."
+
+                <br><br>
+
+                11. Otherwise, display the filtered player cards.
+            </p>
+
+			<h3>Wireframes</h3>
+			<p>
+				<img src="images/mobile-wireframe.png" alt="Mobile wireframe">
+                <img src="images/desktop-wireframe.png" alt="Desktop wireframe">
+
+			</p>
+
+			<h3>Landing page</h3>
+			<p>
+				The landing page will display the website logo, a search bar,
+                name, country, club, or position. Results will update
+                and responsive player cards. Users can search players by
+                immediately after searching.
+			</p>
+
+			<h3>Additional Pages</h3>
+			<p>
+				This project will consist of a single responsive page, so no additional
+                pages are planned.
+			</p>
+			
+		</main>
+	</body>
+</html>
