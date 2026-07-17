@@ -19,7 +19,7 @@ const players = [
 	{ name: 'Rodri', country: 'Spain', code: 'ESP', flag: '🇪🇸', position: 'MID', club: 'Manchester City', caps: 63, goals: 8, assists: 10, image: '', captain: true },
 	{ name: 'Pedri', country: 'Spain', code: 'ESP', flag: '🇪🇸', position: 'MID', club: 'Barcelona', caps: 49, goals: 7, assists: 9, image: '', captain: false },
 	{ name: 'Fabian Ruiz', country: 'Spain', code: 'ESP', flag: '🇪🇸', position: 'MID', club: 'Paris Saint-Germain', caps: 41, goals: 6, assists: 5, image: '', captain: false },
-	{ name: 'Lamine Yamal', country: 'Spain', code: 'ESP', flag: '🇪🇸', position: 'FWD', club: 'Barcelona', caps: 32, goals: 12, assists: 14, image: 'images/lamine.webp', captain: false },
+	{ name: 'Lamine Yamal', country: 'Spain', code: 'ESP', flag: '🇪🇸', position: 'FWD', club: 'Barcelona', caps: 32, goals: 12, assists: 14, image: '', captain: false },
 	{ name: 'Nico Williams', country: 'Spain', code: 'ESP', flag: '🇪🇸', position: 'FWD', club: 'Athletic Club', caps: 29, goals: 8, assists: 7, image: '', captain: false },
 	{ name: 'Mikel Oyarzabal', country: 'Spain', code: 'ESP', flag: '🇪🇸', position: 'FWD', club: 'Real Sociedad', caps: 45, goals: 16, assists: 8, image: '', captain: false },
 
@@ -31,7 +31,7 @@ const players = [
 	{ name: 'Enzo Fernandez', country: 'Argentina', code: 'ARG', flag: '🇦🇷', position: 'MID', club: 'Chelsea', caps: 45, goals: 6, assists: 8, image: '', captain: false },
 	{ name: 'Rodrigo De Paul', country: 'Argentina', code: 'ARG', flag: '🇦🇷', position: 'MID', club: 'Atletico Madrid', caps: 89, goals: 8, assists: 12, image: '', captain: false },
 	{ name: 'Alexis Mac Allister', country: 'Argentina', code: 'ARG', flag: '🇦🇷', position: 'MID', club: 'Liverpool', caps: 46, goals: 8, assists: 7, image: '', captain: false },
-	{ name: 'Lionel Messi', country: 'Argentina', code: 'ARG', flag: '🇦🇷', position: 'FWD', club: 'Inter Miami', caps: 199, goals: 117, assists: 58, image: 'images/messi.webp', captain: true },
+	{ name: 'Lionel Messi', country: 'Argentina', code: 'ARG', flag: '🇦🇷', position: 'FWD', club: 'Inter Miami', caps: 199, goals: 117, assists: 58, image: '', captain: true },
 	{ name: 'Julian Alvarez', country: 'Argentina', code: 'ARG', flag: '🇦🇷', position: 'FWD', club: 'Atletico Madrid', caps: 51, goals: 14, assists: 11, image: '', captain: false },
 	{ name: 'Lautaro Martinez', country: 'Argentina', code: 'ARG', flag: '🇦🇷', position: 'FWD', club: 'Inter Milan', caps: 75, goals: 33, assists: 14, image: '', captain: false },
 
@@ -43,7 +43,7 @@ const players = [
 	{ name: 'Declan Rice', country: 'England', code: 'ENG', flag: '🏴', position: 'MID', club: 'Arsenal', caps: 69, goals: 12, assists: 9, image: '', captain: false },
 	{ name: 'Jude Bellingham', country: 'England', code: 'ENG', flag: '🏴', position: 'MID', club: 'Real Madrid', caps: 45, goals: 12, assists: 10, image: '', captain: false },
 	{ name: 'Eberechi Eze', country: 'England', code: 'ENG', flag: '🏴', position: 'MID', club: 'Arsenal', caps: 12, goals: 3, assists: 4, image: '', captain: false },
-	{ name: 'Harry Kane', country: 'England', code: 'ENG', flag: '🏴', position: 'FWD', club: 'Bayern Munich', caps: 108, goals: 78, assists: 25, image: 'images/kane.jpg', captain: true },
+	{ name: 'Harry Kane', country: 'England', code: 'ENG', flag: '🏴', position: 'FWD', club: 'Bayern Munich', caps: 108, goals: 78, assists: 25, image: '', captain: true },
 	{ name: 'Bukayo Saka', country: 'England', code: 'ENG', flag: '🏴', position: 'FWD', club: 'Arsenal', caps: 45, goals: 16, assists: 15, image: '', captain: false },
 	{ name: 'Ollie Watkins', country: 'England', code: 'ENG', flag: '🏴', position: 'FWD', club: 'Aston Villa', caps: 24, goals: 8, assists: 6, image: '', captain: false },
 
@@ -55,7 +55,7 @@ const players = [
 	{ name: 'Bruno Fernandes', country: 'Portugal', code: 'POR', flag: '🇵🇹', position: 'MID', club: 'Manchester United', caps: 92, goals: 34, assists: 32, image: '', captain: false },
 	{ name: 'Joao Neves', country: 'Portugal', code: 'POR', flag: '🇵🇹', position: 'MID', club: 'Paris Saint-Germain', caps: 24, goals: 3, assists: 4, image: '', captain: false },
 	{ name: 'Vitinha', country: 'Portugal', code: 'POR', flag: '🇵🇹', position: 'MID', club: 'Paris Saint-Germain', caps: 31, goals: 4, assists: 6, image: '', captain: false },
-	{ name: 'Cristiano Ronaldo', country: 'Portugal', code: 'POR', flag: '🇵🇹', position: 'FWD', club: 'Al Nassr', caps: 226, goals: 143, assists: 46, image: 'images/ronaldo.webp', captain: true },
+	{ name: 'Cristiano Ronaldo', country: 'Portugal', code: 'POR', flag: '🇵🇹', position: 'FWD', club: 'Al Nassr', caps: 226, goals: 143, assists: 46, image: '', captain: true },
 	{ name: 'Rafael Leao', country: 'Portugal', code: 'POR', flag: '🇵🇹', position: 'FWD', club: 'AC Milan', caps: 37, goals: 8, assists: 9, image: '', captain: false },
 	{ name: 'Goncalo Ramos', country: 'Portugal', code: 'POR', flag: '🇵🇹', position: 'FWD', club: 'Paris Saint-Germain', caps: 27, goals: 12, assists: 5, image: '', captain: false },
 
@@ -65,7 +65,7 @@ const players = [
 	{ name: 'Gabriel Magalhaes', country: 'Brazil', code: 'BRA', flag: '🇧🇷', position: 'DEF', club: 'Arsenal', caps: 20, goals: 3, assists: 1, image: '', captain: false },
 	{ name: 'Bruno Guimaraes', country: 'Brazil', code: 'BRA', flag: '🇧🇷', position: 'MID', club: 'Newcastle United', caps: 28, goals: 3, assists: 5, image: '', captain: false },
 	{ name: 'Vinicius Junior', country: 'Brazil', code: 'BRA', flag: '🇧🇷', position: 'FWD', club: 'Real Madrid', caps: 40, goals: 12, assists: 11, image: '', captain: false },
-	{ name: 'Neymar', country: 'Brazil', code: 'BRA', flag: '🇧🇷', position: 'FWD', club: 'Santos', caps: 128, goals: 79, assists: 56, image: 'images/neymar.webp', captain: false },
+	{ name: 'Neymar', country: 'Brazil', code: 'BRA', flag: '🇧🇷', position: 'FWD', club: 'Santos', caps: 128, goals: 79, assists: 56, image: '', captain: false },
 	{ name: 'Raphinha', country: 'Brazil', code: 'BRA', flag: '🇧🇷', position: 'FWD', club: 'Barcelona', caps: 34, goals: 12, assists: 13, image: '', captain: false },
 	{ name: 'Gabriel Martinelli', country: 'Brazil', code: 'BRA', flag: '🇧🇷', position: 'FWD', club: 'Arsenal', caps: 19, goals: 4, assists: 4, image: '', captain: false },
 	{ name: 'Igor Thiago', country: 'Brazil', code: 'BRA', flag: '🇧🇷', position: 'FWD', club: 'Brentford', caps: 6, goals: 2, assists: 1, image: '', captain: false },
@@ -149,7 +149,7 @@ function avatarUrl(player) {
 function photoTemplate(player) {
 	const fallback = avatarUrl(player);
 	const src = player.image.trim() !== '' ? player.image : fallback;
-	return `<img class="player-photo" src="${src}" alt="${player.name}" width="90" height="90" loading="lazy" onerror="this.onerror=null; this.src='${fallback}';">`;
+	return `<img class="player-photo" src="${src}" alt="${player.name}" loading="lazy" onerror="this.onerror=null; this.src='${fallback}';">`;
 }
 
 function cardTemplate(player) {
@@ -177,15 +177,16 @@ function cardTemplate(player) {
 }
 
 function renderPlayers(playerList) {
+	cardContainer.innerHTML = '';
+
 	if (playerList.length === 0) {
 		cardContainer.innerHTML = '<p class="no-results">No players found. Try a different name, country, or position.</p>';
 		return;
 	}
 
-	// Build the full HTML string first, then write it to the page ONE time.
-	// Using += in a loop forces the browser to re-render everything each pass, which is slow.
-	const allCardsHtml = playerList.map(player => cardTemplate(player)).join('');
-	cardContainer.innerHTML = allCardsHtml;
+	playerList.forEach(player => {
+		cardContainer.innerHTML += cardTemplate(player);
+	});
 
 	const cards = document.querySelectorAll('.player-card');
 	cards.forEach(card => {
