@@ -149,7 +149,7 @@ function avatarUrl(player) {
 function photoTemplate(player) {
 	const fallback = avatarUrl(player);
 	const src = player.image.trim() !== '' ? player.image : fallback;
-	return `<img class="player-photo" src="${src}" alt="${player.name}" loading="lazy" onerror="this.onerror=null; this.src='${fallback}';">`;
+	return `<img class="player-photo" src="${src}" alt="${player.name}" width="90" height="90" loading="lazy" onerror="this.onerror=null; this.src='${fallback}';">`;
 }
 
 function cardTemplate(player) {
@@ -177,16 +177,15 @@ function cardTemplate(player) {
 }
 
 function renderPlayers(playerList) {
-	cardContainer.innerHTML = '';
-
 	if (playerList.length === 0) {
 		cardContainer.innerHTML = '<p class="no-results">No players found. Try a different name, country, or position.</p>';
 		return;
 	}
 
-	playerList.forEach(player => {
-		cardContainer.innerHTML += cardTemplate(player);
-	});
+	// Build the full HTML string first, then write it to the page ONE time.
+	// Using += in a loop forces the browser to re-render everything each pass, which is slow.
+	const allCardsHtml = playerList.map(player => cardTemplate(player)).join('');
+	cardContainer.innerHTML = allCardsHtml;
 
 	const cards = document.querySelectorAll('.player-card');
 	cards.forEach(card => {

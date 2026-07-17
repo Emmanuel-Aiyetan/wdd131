@@ -165,6 +165,7 @@ main {
 .player-photo {
     width: 90px;
     height: 90px;
+    aspect-ratio: 1 / 1;
     border: 2px solid #d4a72c;
     border-radius: 50%;
     object-fit: cover;
