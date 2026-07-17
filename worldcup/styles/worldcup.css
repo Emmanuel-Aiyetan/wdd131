@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b1220;
+    color: #e8ecf4;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2 {
+    font-family: "Amatic SC", cursive;
+}
+
+header {
+    background-color: #1a2743;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 3px solid #d4a72c;
+}
+
+header h1 {
+    margin: 0 0 .3rem;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: .95rem;
+    color: #9aa5bd;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.search {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .75rem;
+}
+
+.search input {
+    flex: 1;
+    border: 2px solid #d4a72c;
+    border-radius: 6px;
+    padding: .7rem;
+    font-size: 1rem;
+    outline: none;
+    min-width: 0;
+    background-color: #141c30;
+    color: #e8ecf4;
+}
+
+.search input::placeholder {
+    color: #9aa5bd;
+}
+
+.search button {
+    background-color: #d4a72c;
+    border: none;
+    border-radius: 6px;
+    padding: .7rem 1rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+.search button:hover {
+    opacity: .9;
+}
+
+.filters {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin-bottom: .5rem;
+}
+
+.filter-btn {
+    background: #141c30;
+    border: 2px solid #d4a72c;
+    border-radius: 20px;
+    padding: .4rem .9rem;
+    font-size: .9rem;
+    color: #d4a72c;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #d4a72c;
+    color: #1a1a1a;
+}
+
+.hint {
+    text-align: center;
+    font-size: .85rem;
+    color: #9aa5bd;
+    margin: .5rem 0 1rem;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #9aa5bd;
+    padding: 2rem 0;
+}
+
+.player-card {
+    perspective: 1000px;
+    height: 320px;
+    cursor: pointer;
+}
+
+.card-front,
+.card-back {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1a2743;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #141c30;
+    backface-visibility: hidden;
+    transition: transform .5s;
+}
+
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    background-color: #1a2743;
+    color: #e8ecf4;
+    transform: rotateY(180deg);
+}
+
+.player-card.flipped .card-front {
+    transform: rotateY(180deg);
+}
+
+.player-card.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+.player-photo {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #d4a72c;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+
+.position-tag {
+    display: inline-block;
+    align-self: flex-start;
+    border-radius: 4px;
+    padding: .2rem .5rem;
+    margin-bottom: .5rem;
+    font-size: .75rem;
+    font-weight: bold;
+    color: white;
+}
+
+.pos-gk {
+    background-color: #6c757d;
+}
+
+.pos-def {
+    background-color: #2e6f95;
+}
+
+.pos-mid {
+    background-color: #2e9e6b;
+}
+
+.pos-fwd {
+    background-color: #c0392b;
+}
+
+.card-front h2,
+.card-back h2 {
+    margin: 0 0 .2rem;
+    font-size: 1.2rem;
+    color: #e8ecf4;
+}
+
+.country {
+    margin: 0;
+    font-size: .9rem;
+    color: #9aa5bd;
+}
+
+.code {
+    font-weight: bold;
+    color: #d4a72c;
+}
+
+.captain-badge {
+    align-self: flex-start;
+    margin-top: auto;
+    border-radius: 4px;
+    padding: .2rem .5rem;
+    font-size: .75rem;
+    font-weight: bold;
+    background-color: #d4a72c;
+    color: #1a1a1a;
+}
+
+.card-back ul {
+    list-style: none;
+    margin: .5rem 0 0;
+    padding: 0;
+    font-size: .9rem;
+}
+
+.card-back li {
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.card-back li span {
+    font-weight: bold;
+    color: #d4a72c;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    color: #9aa5bd;
+    font-size: .85rem;
+}
+
+@media screen and (min-width: 600px) {
+
+    #card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    #card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
