@@ -114,6 +114,7 @@ main {
     grid-template-columns: 1fr;
     gap: 1rem;
     width: 100%;
+    min-height: 2000px;
 }
 
 .no-results {
@@ -165,6 +166,7 @@ main {
 .player-photo {
     width: 90px;
     height: 90px;
+    aspect-ratio: 1 / 1;
     border: 2px solid #d4a72c;
     border-radius: 50%;
     object-fit: cover;
@@ -257,6 +259,7 @@ footer {
 
     #card-container {
         grid-template-columns: repeat(2, 1fr);
+        min-height: 992px;
     }
 }
 
@@ -264,6 +267,7 @@ footer {
 
     #card-container {
         grid-template-columns: repeat(3, 1fr);
+        min-height: 656px;
     }
 
     header h1 {
