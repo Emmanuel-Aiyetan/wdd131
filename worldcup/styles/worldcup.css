@@ -26,6 +26,22 @@ header {
     border-bottom: 3px solid #d4a72c;
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+ 
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #d4a72c;
+    object-fit: cover;
+}
+
 header h1 {
     margin: 0 0 .3rem;
     font-size: 1.8rem;
@@ -272,5 +288,15 @@ footer {
 
     header h1 {
         font-size: 2.2rem;
+    }
+
+    .logo {
+        flex-direction: row;
+        text-align: left;
+    }
+ 
+    .logo img {
+        width: 80px;
+        height: 80px;
     }
 }
