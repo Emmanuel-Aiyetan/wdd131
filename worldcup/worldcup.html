@@ -1,67 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Search player cards from the top 10 ranked nations at the 2026 World Cup.">
-    <meta name="author" content="Emmanuel Aiyetan">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="World Cup Player Cards">
-    <meta property="og:description" content="Search player cards from the top 10 ranked nations at the 2026 World Cup.">
-    <meta property="og:url" content="https://emmanuel-aiyetan.github.io/wdd131/worldcup/worldcup.html">
-    <meta property="og:image" content="images/social-preview.png">
-
-    <meta name="twitter:card" content="Social Preview Image">
-    <meta name="twitter:title" content="World Cup Player Cards">
-    <meta name="twitter:description" content="Search player cards from the top 10 ranked nations at the 2026 World Cup">
-    <meta name="twitter:image" content="images/social-preview.png">
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/worldcup-apple-touch-icon.png">
-    <title>World Cup Player Cards</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/worldcup.css">
-    <script src="worldcup.js" defer></script>
-</head>
-<body>
-
-<header>
-    <div class="logo">
-        <img src="images/logo.png" alt="World Cup Player Cards Logo" width="60" height="60">
-        <div>
-    <h1>World Cup Player Cards</h1>
-    <p class="subtitle">Search the squads of the top 10 FIFA-ranked nations at the 2026 World Cup</p>
-</header>
-
-<main>
-
-    <section class="search">
-        <input
-            id="search"
-            type="text"
-            placeholder="Search by name, country, or position">
-        <button id="search-button">Search</button>
-    </section>
-
-    <section class="filters">
-        <button class="filter-btn active" data-position="All">All</button>
-        <button class="filter-btn" data-position="GK">GK</button>
-        <button class="filter-btn" data-position="DEF">DEF</button>
-        <button class="filter-btn" data-position="MID">MID</button>
-        <button class="filter-btn" data-position="FWD">FWD</button>
-    </section>
-
-    <p class="hint">Tap a card to flip it and see club, caps, and goals.</p>
-
-    <section id="card-container"></section>
-
-</main>
-
-<footer>
-    <p> Emmanuel Aiyetan Final Project - WDD131 2026</p>
-</footer>
-
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Explore football player cards, filter squads and compare international statistics."><title>World Cup Player Cards</title><link rel="icon" href="images/favicon.ico"><link rel="stylesheet" href="styles/worldcup.css"><script type="module" src="worldcup.js"></script></head>
+<body><a class="skip" href="#explore">Skip to players</a><header><a class="brand" href="./worldcup.html"><img src="images/logo.png" width="42" height="42" alt="">WORLD CUP <span>PLAYER CARDS</span></a><span class="edition">THE PLAYER EXPLORER / 2026</span></header>
+<main><section class="hero"><div><p class="eyebrow">THE WORLD’S GAME. YOUR SELECTION.</p><h1>Every player.<br>A different <em>story.</em></h1><p class="intro">Explore the names behind the nations. Discover player cards, build your shortlist, and put the numbers side by side.</p><a class="primary" href="#explore">Explore the players ↗</a></div><aside><span class="pitch-label">SCOUTING NOTE / 01</span><strong>Greatness is<br>in the details.</strong><p>Choose up to three players to compare their international records.</p><div class="pitch" aria-hidden="true"><div></div><i></i></div></aside></section>
+<section id="explore" aria-labelledby="explore-title"><div class="section-head"><div><p class="eyebrow">BUILD YOUR MATCHUP</p><h2 id="explore-title">The player collection</h2></div><span id="connection" role="status">Connecting…</span></div><p class="data-note">Statistics are international career totals, not World Cup totals. Original project records are unverified sample data; these are not confirmed 2026 squads or rankings.</p>
+<form id="controls"><label class="search">Search players<input id="search" type="search" placeholder="Name, nation, club…" maxlength="120"></label><label>Nation<select id="country"><option value="">All nations</option></select></label><label>Sort by<select id="sort"><option value="name">Name A–Z</option><option value="goals">Most goals</option><option value="caps">Most caps</option><option value="assists">Most assists</option></select></label><button type="button" id="reset">Reset filters</button></form>
+<div class="toolbar"><div id="positions" role="group" aria-label="Position"></div><label class="saved"><input type="checkbox" id="saved"> My shortlist</label></div><p id="results" role="status" aria-live="polite"></p><div id="cards" class="cards" aria-busy="true"></div><button id="more" hidden>Load more players</button></section>
+<section id="comparison" aria-labelledby="compare-title"><div class="section-head"><div><p class="eyebrow">SIDE BY SIDE</p><h2 id="compare-title">Your matchup <span id="compare-count">0 / 3</span></h2></div><button id="clear-compare">Clear comparison</button></div><div id="compare-content"><p>Select Compare on a player card to start your matchup.</p></div></section><p id="notice" role="status" aria-live="polite"></p></main><footer>World Cup Player Cards <span>Built by Emmanuel Aiyetan · Independent student project</span></footer></body></html>

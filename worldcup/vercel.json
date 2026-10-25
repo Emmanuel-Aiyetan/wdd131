@@ -1,0 +1,1 @@
+{"buildCommand":"npm run build","outputDirectory":"public","functions":{"api/players.js":{"includeFiles":"lib/**"}},"headers":[{"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"},{"key":"Referrer-Policy","value":"strict-origin-when-cross-origin"}]}]}

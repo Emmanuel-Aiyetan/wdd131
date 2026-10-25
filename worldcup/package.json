@@ -1,0 +1,19 @@
+{
+  "name": "worldcup-player-cards",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && node server.mjs",
+    "start": "npm run build && node server.mjs",
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "db:setup": "node scripts/setup-database.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0"
+  }
+}
